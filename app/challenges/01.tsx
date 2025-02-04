@@ -9,11 +9,13 @@ const FirstChallenge = () => {
     <SafeAreaView className='bg-purple-400 h-full p-8'>
       <ScrollView>
       <View className='min-h-full justify-center items-center'>
-      <View className='w-full p-6 bg-neutral-50 rounded-2xl'>
+      <View className='flex-col h-full justify-between w-full p-6 bg-white rounded-2xl'>
       <Ionicons name='arrow-back-outline' size={24} color='#000' />
-      <Text className='text-4xl font-psemibold mt-8'>Shopping{"\n"}Cart</Text>
+      <View>
+      <Text className='text-4xl font-psemibold'>Shopping{"\n"}Cart</Text>
       <Text className='text-lg font-pmedium mt-1'>3 items</Text>
-      <View className='flex-col gap-y-3 justify-center mt-10'>
+      </View>
+      <View className='flex-col gap-y-2 justify-center'>
         {[1,2,3,4].map((item, index) => 
         (
           <View className='flex-row p-1 rounded-md bg-purple-50' key={index}>
@@ -33,7 +35,7 @@ const FirstChallenge = () => {
         )
         )}
       </View>
-      <View className='flex-row justify-between items-center mt-8'>
+      <View className='flex-row justify-between items-center'>
         <TouchableOpacity className='bg-purple-600 px-8 py-4 rounded-full'>
           <Text className='text-white text-base font-pmedium'>Check out</Text>
         </TouchableOpacity>
