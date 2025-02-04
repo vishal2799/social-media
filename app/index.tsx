@@ -1,15 +1,13 @@
-import { Text, View } from "react-native";
+import { View } from 'react-native'
+import React from 'react'
+import { Link } from 'expo-router'
 
-export default function Index() {
+const index = () => {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text>Edit app/index.tsx to edit this screen.</Text>
+    <View>
+      <Link href={'/challenges/01'}>Challenges</Link>
     </View>
-  );
+  )
 }
+
+export default index
