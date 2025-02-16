@@ -9,7 +9,7 @@ const ChallengeIndex = () => {
         <ScrollView>
             <View>
                 <Text>Challenge Index</Text>
-                <Link href={'/challenges'}>Netflix Intro</Link>
+                <Link href={'/challenges/02'}>Netflix Intro</Link>
             </View>
         </ScrollView>
     </SafeAreaView>

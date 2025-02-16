@@ -8,6 +8,7 @@ const ChallengesLayout = () => {
     <Stack>
       <Stack.Screen name='index' options={{ headerShown: false }} />
       <Stack.Screen name='01' options={{ headerShown: false }} />
+      <Stack.Screen name='02' options={{ headerShown: false }} />
     </Stack>
      <StatusBar backgroundColor="#F8F9FA" style="dark" />
      </>
